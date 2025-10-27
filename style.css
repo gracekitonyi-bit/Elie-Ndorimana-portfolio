@@ -1,48 +1,105 @@
-/* === Projects Page === */
-.projects-section {
-  text-align: center;
-  padding: 60px 10%;
-  background: #0d1117;
-  color: #f0f0f0;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #00bcd4;
-  animation: fadeInDown 1.2s ease-in-out;
-}
-
-.section-subtitle {
-  color: #bbb;
-  margin-bottom: 40px;
-  animation: fadeInUp 1.5s ease-in-out;
-}
-
-.projects-container {
+/* ===== HERO SECTION (HOME) ===== */
+.hero {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #0d1117, #111a26);
+  color: #f5f5f5;
+  min-height: 90vh;
 }
 
-.project-card {
-  background: #161b22;
-  border-radius: 15px;
-  width: 300px;
-  padding: 20px;
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.hero-text h1 span {
+  color: #00bcd4;
+}
+
+.hero-text h2 {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  margin-right: 15px;
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.hero-buttons .btn:hover {
+  background: #009cb2;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+}
+.btn-outline:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+.hero-img {
+  flex: 1 1 350px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeInUp 1.5s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.hero-img .profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+  border: 3px solid #00bcd4;
+  transition: transform 0.4s ease;
+}
+.hero-img .profile-pic:hover {
+  transform: scale(1.05);
 }
 
-.project-card img {
-  width: 80px;
-  margin-bottom: 15px;
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.3);
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide {
+  animation: fadeInUp 1s ease-in-out;
+}
+.animate-fade {
+  animation: fadeIn 1.5s ease-in-out;
 }
