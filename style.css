@@ -1,0 +1,205 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00d4ff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.logo span {
+  color: #9d4edd;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #00d4ff;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  flex: 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text span {
+  color: #00d4ff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cfcfcf;
+}
+
+.btn {
+  background: linear-gradient(45deg, #00d4ff, #9d4edd);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #9d4edd, #00d4ff);
+  transform: translateY(-3px);
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #00d4ff;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #aaa;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: auto;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
