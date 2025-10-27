@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Elie Ndorimana</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Elie Ndorimana</h1>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="about.html" class="text-indigo-600 font-semibold">About</a></li>
+        <li><a href="projects.html" class="hover:text-indigo-600">Projects</a></li>
+        <li><a href="achievements.html" class="hover:text-indigo-600">Achievements</a></li>
+        <li><a href="skills.html" class="hover:text-indigo-600">Skills</a></li>
+        <li><a href="contact.html" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="pt-28 text-center bg-gradient-to-b from-indigo-50 to-white pb-10">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-2" data-aos="fade-up">About Me</h2>
+    <p class="text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+      Master’s Student | Data Science | Applied Mathematics | Research & Policy Enthusiast
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- Profile Section -->
+    <section class="flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
+      <img src="images/elie.jpg" alt="Elie Ndorimana" class="w-56 h-56 rounded-full shadow-lg">
+      <div>
+        <h3 class="text-2xl font-semibold text-indigo-700 mb-3">Who is Elie?</h3>
+        <p class="text-gray-700 leading-relaxed">
+          I’m <strong>Elie Ndorimana</strong>, a passionate mathematician and aspiring data scientist currently pursuing a 
+          <strong>Master’s Degree in Data Science</strong> at the <strong>African Institute for Mathematical Sciences (AIMS) Rwanda</strong> 
+          under the <strong>Mastercard Foundation Scholarship</strong>. With a strong foundation in 
+          <strong>Applied Mathematics</strong> from the <strong>University of Rwanda</strong>, 
+          I’m dedicated to solving real-world problems through mathematical modeling, data-driven research, and technology.
+        </p>
+        <p class="text-gray-700 mt-4 leading-relaxed">
+          Beyond academics, I serve as a <strong>Rwanda Mathematics Olympiad Coach</strong> and a part-time contributor at 
+          <strong>Totum Tuus Ltd</strong>. My interests span across <em>data science, AI, research, and education</em>, 
+          and I’m driven by the desire to use analytics and innovation to impact policy and empower communities.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section data-aos="fade-up">
+      <h3 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">🎓 Education</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-gray-800">African Institute for Mathematical Sciences (AIMS) Rwanda</h4>
+          <p class="text-gray-600 mt-2">Master’s Degree in Data Science (Aug 2025 – May 2026)</p>
+          <p class="text-gray-700 mt-3">
+            Specialized in computational data science, machine learning, and applied research with a focus on public health, 
+            environmental data, and technology-based solutions.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-gray-800">University of Rwanda – College of Science and Technology</h4>
+          <p class="text-gray-600 mt-2">Bachelor’s Degree in Applied Mathematics (Graduated with Excellence, 2021)</p>
+          <p class="text-gray-700 mt-3">
+            Developed a strong background in analytical thinking, mathematical modeling, and computational problem solving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Roles -->
+    <section data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-semibold text-indigo-700 mb-6 text-center">💼 Professional Experience</h3>
+      <div class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-gray-800">Rwanda Mathematics Olympiad</h4>
+          <p class="text-gray-600">Coach | Apr 2023 – Present</p>
+          <p class="text-gray-700 mt-2">
+            Coaching talented students in mathematical problem-solving and mentoring the next generation of innovators.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-gray-800">Totum Tuus Ltd</h4>
+          <p class="text-gray-600">Part-time Contributor | Aug 2024 – Present</p>
+          <p class="text-gray-700 mt-2">
+            Engaged in analytical tasks and data interpretation projects aligned with education and technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-700 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 Elie Ndorimana | Designed by Grace Kitonyi</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900 });
+  </script>
+</body>
+</html>
