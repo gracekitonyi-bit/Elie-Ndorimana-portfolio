@@ -23,18 +23,59 @@
     <h1>Get in Touch</h1>
     <p>You can reach me through the form below or via LinkedIn.</p>
 
-    <form action="https://formspree.io/f/xkgnopqr" method="POST">
+    <!-- ===== FORMSPREE FORM ===== -->
+    <form id="contact-form" action="https://formspree.io/f/xkgnopqr" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send Message</button>
+      <p id="form-status" style="margin-top:10px;"></p>
     </form>
 
-    <p>💼 <a href="https://www.linkedin.com/in/elie-ndorimana-44b3b034a">LinkedIn Profile</a></p>
+    <p>💼 <a href="https://www.linkedin.com/in/elie-ndorimana-44b3b034a" target="_blank">LinkedIn Profile</a></p>
   </section>
 
   <footer>
     <p>© 2025 Elie NDORIMANA | Designed by Grace Nzambali</p>
   </footer>
+
+  <!-- ===== FORM SUBMISSION SCRIPT ===== -->
+  <script>
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          status.textContent = "✅ Your message has been sent. Thank you!";
+          status.style.color = "#00bcd4";
+          form.reset();
+        } else {
+          const data = await response.json();
+          if (data.errors) {
+            status.textContent = "❌ Error sending message: " + data.errors.map(e => e.message).join(", ");
+            status.style.color = "#f44336";
+          } else {
+            status.textContent = "❌ Error sending message. Please try again later.";
+            status.style.color = "#f44336";
+          }
+        }
+      } catch (error) {
+        status.textContent = "❌ Network error. Please try again later.";
+        status.style.color = "#f44336";
+      }
+    });
+  </script>
 </body>
 </html>
