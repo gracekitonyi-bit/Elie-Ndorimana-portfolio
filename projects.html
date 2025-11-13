@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Elie NDORIMANA</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <nav class="navbar">
@@ -21,29 +22,174 @@
 
   <section class="projects-section">
     <h1>Featured Projects</h1>
-    <div class="project-cards">
-      <div class="card">
-        <h2>Mathematical Modeling of Disease Spread</h2>
-        <p>
-          A data-driven model analyzing disease transmission patterns in Rwanda,
-          using real-world datasets to propose predictive health interventions.
-        </p>
+    
+    <div class="projects-container">
+      <!-- Academic Research Projects -->
+      <div class="project-category">
+        <h2><i class="fas fa-graduation-cap"></i> Academic Research</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-virus"></i>
+            </div>
+            <h3>Mathematical Modeling of COVID-19 in Rwanda</h3>
+            <p class="project-meta">University of Rwanda | 2024</p>
+            <p class="project-description">
+              Developed SEIRD (Susceptible-Exposed-Infected-Recovered-Dead) models 
+              for epidemic analysis and conducted parameter estimation using real-world 
+              Rwandan health data to predict outbreak patterns and inform public health policy.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Mathematical Modeling</span>
+              <span class="tech-tag">Epidemiology</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Application of Dynamical System and Chaos Theory in Economics</h3>
+            <p class="project-meta">AIMS Rwanda | 2025</p>
+            <p class="project-description">
+              Modeled nonlinear behavior in economic systems using chaos theory principles. 
+              Analyzed stability, bifurcation, and chaotic phenomena to understand complex 
+              economic dynamics and predict market behaviors under different conditions.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Julia</span>
+              <span class="tech-tag">Dynamical Systems</span>
+              <span class="tech-tag">Chaos Theory</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h2>Education Analytics Dashboard</h2>
-        <p>
-          Built a machine learning dashboard that visualizes educational outcomes
-          to support policy decisions and improve academic performance.
-        </p>
+      <!-- Data Science & Analytics -->
+      <div class="project-category">
+        <h2><i class="fas fa-chart-bar"></i> Data Science & Analytics</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>RSSB Data Analytics Dashboard</h3>
+            <p class="project-meta">Rwanda Social Security Board | 2024</p>
+            <p class="project-description">
+              Built interactive Power BI dashboards for planning and monitoring social security data. 
+              Conducted comprehensive data cleaning, transformation, and visualization to support 
+              organizational decision-making and resource allocation strategies.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Data Visualization</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Education Analytics Dashboard</h3>
+            <p class="project-meta">Personal Project | 2024</p>
+            <p class="project-description">
+              Developed a machine learning-powered dashboard that visualizes educational outcomes 
+              across Rwandan schools. Analyzed performance patterns to identify key success factors 
+              and provide data-driven recommendations for improving academic performance nationwide.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Tableau</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h2>Climate Data Insights</h2>
-        <p>
-          Applied statistical learning to study climate change trends and their
-          impacts on agriculture and water resources in East Africa.
-        </p>
+      <!-- Environmental & Climate Projects -->
+      <div class="project-category">
+        <h2><i class="fas fa-leaf"></i> Environmental Analytics</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <h3>Climate Data Insights for East Africa</h3>
+            <p class="project-meta">Research Project | 2024</p>
+            <p class="project-description">
+              Applied statistical learning and time series analysis to study climate change trends 
+              across East Africa. Focused on impacts on agriculture and water resources, providing 
+              predictive models to support sustainable resource management and climate adaptation strategies.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">R</span>
+              <span class="tech-tag">Time Series Analysis</span>
+              <span class="tech-tag">Statistical Modeling</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Agricultural Yield Prediction Model</h3>
+            <p class="project-meta">AIMS Research | 2025</p>
+            <p class="project-description">
+              Building predictive models for crop yields using satellite imagery, weather data, 
+              and soil conditions. Integrating machine learning with traditional agricultural 
+              knowledge to help farmers optimize planting schedules and resource allocation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Satellite Imagery</span>
+              <span class="tech-tag">Predictive Modeling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Educational Tools -->
+      <div class="project-category">
+        <h2><i class="fas fa-laptop-code"></i> Educational Tools</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3>Mathematics Olympiad Training Platform</h3>
+            <p class="project-meta">AIMS Rwanda | 2025</p>
+            <p class="project-description">
+              Developing an interactive online platform for Rwanda Mathematics Olympiad training. 
+              Includes problem-solving modules, progress tracking, and adaptive learning paths 
+              to enhance mathematical reasoning and competition preparation for students.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Educational Technology</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-atom"></i>
+            </div>
+            <h3>Physics Simulation Laboratory</h3>
+            <p class="project-meta">Teaching Innovation | 2024</p>
+            <p class="project-description">
+              Created interactive physics simulations for teaching complex concepts at Totuum Tuum. 
+              Developed virtual laboratories that allow students to experiment with physical principles 
+              in a safe, controlled digital environment, enhancing understanding and engagement.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Simulation</span>
+              <span class="tech-tag">Educational Software</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
